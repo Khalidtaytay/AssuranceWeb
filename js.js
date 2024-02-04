@@ -20,7 +20,7 @@ const swiper02 = new Swiper('.swiper02', {
     loop: false,
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination02',
+    el: '.swiper-pagination',
   },
 
 });
@@ -69,4 +69,20 @@ declarezDevisHover.addEventListener('mouseenter',()=>{
 });
 declarezDevisHover.addEventListener('mouseleave',()=>{
   declarezDevisHover.style.display= 'none';
+});
+//===========================================
+
+let menubar = document.querySelector('.menubar');
+let lines = document.querySelector('.lines');
+let line1 = document.getElementById('line1');
+let line2 = document.getElementById('line2');
+lines.addEventListener('click', () => {
+  if (menubar.style.display === 'flex') {
+    menubar.style.display = 'none';
+    menubar.style.transform = 'translateX(100%)';
+  } else {
+    menubar.style.display = 'flex';
+    menubar.style.transform = 'translateX(0)';
+  }
+  line1.style.transform = 'rotateX(180deg)';
 });
