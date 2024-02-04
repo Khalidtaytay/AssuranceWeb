@@ -286,6 +286,66 @@ h5{
     width: 200px;
 }
 /*====================Medias===================*/
+
+@media(max-width:1224px){
+    .menu ul{
+        display: none;
+    }
+    .lines{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
+    .line{
+        width: 30px;
+        margin: 3px;
+        height: 3px;
+        background: rergba(0, 0, 0, 0.623);
+    }
+}
+@media(max-width:1144px){
+    .section01{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .swiper01{
+        display: none;
+    }
+    .swiper02{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .langage-switcher{
+        top: 30px;
+    }
+    [id*='hover']{
+        position: relative;
+    }
+    .menubar{
+        background: #FAFAFA;
+        width: 100%;
+        height: 100dvh;
+        position: relative;
+        top: 100px;
+        flex-direction: column;
+        transform: translateX(100%);
+        animation: moving 1s ease-in;
+    }
+    @keyframes moving {
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(o);
+        }
+        
+    }
+}
 @media(max-width:500px){
     .colum{
         width: 100%;
@@ -323,64 +383,3 @@ h5{
         width: 90%;
     }
 }
-
-@media(max-width:1224px){
-    .menu ul{
-        display: none;
-    }
-    .lines{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-    }
-    .line{
-        width: 30px;
-        margin: 3px;
-        height: 3px;
-        background: rgba(0, 0, 0, 0.623);
-    }
-}
-@media(max-width:1144px){
-    .section01{
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        position: relative;
-    }
-    .swiper01{
-        display: none;
-    }
-    .swiper02{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-    }
-    .langage-switcher{
-        top: 30px;
-    }
-    [id*='hover']{
-        position: relative;
-    }
-    .menubar{
-        background: #FAFAFA;
-        width: 100%;
-        height: 100dvh;
-        position: relative;
-        top: 500px;
-        flex-direction: column;
-        transform: translateX(100%);
-        animation: moving 1s ease-in;
-    }
-    @keyframes moving {
-        from{
-            transform: translateX(100%);
-        }
-        to{
-            transform: translateX(o);
-        }
-        
-    }
-}
-  
