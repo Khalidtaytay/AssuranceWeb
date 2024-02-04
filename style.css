@@ -286,6 +286,44 @@ h5{
     width: 200px;
 }
 /*====================Medias===================*/
+@media(max-width:500px){
+    .colum{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin: 5px 0px;
+    }
+    .section01-img{
+        width: 100%;
+    }
+    .ending-grid{
+        display: inline-block;
+    }
+    .section03{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+    .section03-btns{
+        width: 100%;
+        position: relative;
+        left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .section03-btns button{
+        width: 200px;
+        margin: 10px;
+    }
+    .section03 p{
+        position: relative;
+        left: 5%;
+        width: 90%;
+    }
+}
+
 @media(max-width:1224px){
     .menu ul{
         display: none;
@@ -345,40 +383,4 @@ h5{
         
     }
 }
-@media(max-width:500px){
-    .colum{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        margin: 5px 0px;
-    }
-    .section01-img{
-        width: 100%;
-    }
-    .ending-grid{
-        display: inline-block;
-    }
-    .section03{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-    }
-    .section03-btns{
-        width: 100%;
-        position: relative;
-        left: 0;
-        display: flex;
-        align-items: center;
-    }
-    .section03-btns button{
-        width: 200px;
-        margin: 10px;
-    }
-    .section03 p{
-        position: relative;
-        left: 5%;
-        width: 90%;
-    }
-}
+  
