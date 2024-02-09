@@ -2,11 +2,18 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+i{
+    color: #0076E3;
+}
 body{
     background: rgb(230, 230, 235);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #424D57;
 }
 #logo{
     width: 100px;
@@ -39,25 +46,46 @@ header{
     padding: 10px;
     cursor: pointer;
     background: transparent;
+    transform: translateY(15%);
     height: 77px;
 }
-.pic-header img{
+.pic-header {
     display: block;
     width: 100%;
+    height: 95dvh;
+}
+[id*='pic']{
+    width: 100%;
+    height: 95dvh;
+}
+#pic1{    
+    background: url(Media/Premium_Photo___Qa_quality_assurance_and_quality_control_conceptual-transformed.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#pic2{    
+    background: url(Media/Recursos_humanos_y_redes_de_personas___Foto_Premium-transformed.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#pic3{    
+    background: url(Media/How_Hiring_A_Consultant_Helps_Your_Small_Business-transformed.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 .langage-switcher{
     position:absolute ;
     right: 60px;
     display: flex;
     align-items: center;
-    top: 50px;
+    top: 0;
     cursor: pointer;
 }
 .langugeHover{
-    background: #FAFAFA ;
     display: none;
+    background: #FAFAFA ;
     position: absolute;
-    top: 80%;
+    top: 20%;
     right:10px;
     width: 150px;
     height: 80px;
@@ -67,16 +95,14 @@ header{
     margin: 10px;
     height: 20px;
 }
-.langage-switcher i{
-    font-size: 20px;
+.fa-globe{
+    font-size: 15px;
     padding: 5px;
 }
 /*======== menu hovering ========*/
-.menu ul li i{
-    font-size: 20px;
+.fa-caret-down{
+    font-size: 12px;
     color: #424D57;
-    position: relative;
-    top: 2px;
     padding: 5px;
 }
 [id*='hover']{
@@ -90,34 +116,38 @@ header{
     border-bottom: 1px solid gray;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.21);
 }
-
+[id*='hover']>:last-child{
+    flex: 0;
+}
 .hover-colum{
-    width: 415px;
+    min-width: 415px;
     border:1px solid gray;
     cursor: pointer;
     display: flex;
     align-items: center;
     position: relative;
+    flex: 1;
 }
 .hover-colum::after{
     content: '';
     box-sizing: border-box;
     height: 4px;
-    width: 415px;
+    width: 100%;
     position: absolute;
     bottom: 0;
+   
 }
 .hover-colum:hover::after{
     background: #0076E3;
 
 }
-.hover-colum i {
+.hover-colum img {
     padding: 15px;
+    width: 90px;
 }
 /*=================== section ==================*/
-i{
-    font-size: 40px;
-    color: #0076E3;
+.prd img{
+    width: 50px;
 }
 .produits{
     display: flex;
@@ -140,6 +170,7 @@ i{
 }
 .prd:hover{
     border:1px #2889EB   solid;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.331);
 }
 .prd button{
     background: #0076E3;
@@ -152,6 +183,11 @@ i{
     bottom: 10px;
     cursor: pointer;
 }
+.prd h5{
+    padding-inline: 10px;
+    position: relative;
+    bottom: 20px;
+}
 .section01{
     display: flex;
     flex-wrap: wrap;
@@ -160,10 +196,10 @@ i{
     padding: 0 5%;
 }
 .section01-img{
-    background: url(https://i.pinimg.com/564x/e9/fd/5f/e9fd5f00da25113d7338a7c7463c804b.jpg);
+    background: url(Media/Free_Photo___Happy_young_smiling_woman_with_new_car_key-transformed.jpeg);
     background-size: cover;
     background-position: center;
-    width:500px;
+    width:550px;
     min-height:500px;
 }
 .colum{
@@ -188,6 +224,9 @@ i{
     min-height: 500px;
     border: 1px solid gray;
     border-radius: 10px;
+}
+.swiper-slide h3,h5{
+    padding-inline: 20px;
 }
 .swiper01 {
     display: flex;
@@ -288,23 +327,50 @@ h5{
 /*====================Medias===================*/
 
 @media(max-width:1224px){
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        width: 90%;
+    }
+    .menu ul li {
+        font-size: smaller  ;
+        height: 10px;
+    }
+}
+@media(max-width:800px){
     .menu ul{
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        height: 100dvh;
+        position: relative;
+        top: 50dvh;
+        font-size: 20px;
         display: none;
+    }
+    .menu ul li{
+        width: 100%;
+        height: 40px;
     }
     .lines{
         display: flex;
         flex-direction: column;
         position: absolute;
-        right: 0;
+        right: 10px;
     }
     .line{
-        width: 30px;
-        margin: 3px;
-        height: 3px;
-        background: rergba(0, 0, 0, 0.623);
+        width: 20px;
+        margin: 2px;
+        height: 2px;
+        background: #424D57;
+        border-radius: 1px;
+        transition:  0.5s ease-in-out;
     }
-}
-@media(max-width:1144px){
+    .hover-colum{
+        position: relative;
+    }
     .section01{
         display: flex;
         align-items: center;
@@ -324,24 +390,24 @@ h5{
         top: 30px;
     }
     [id*='hover']{
-        position: relative;
+        display: none;
     }
     .menubar{
         background: #FAFAFA;
         width: 100%;
         height: 100dvh;
         position: relative;
-        top: 100px;
+        top: 50dvh;
         flex-direction: column;
         transform: translateX(100%);
-        animation: moving 1s ease-in;
+        animation: moving 1s ease-in-out forwards;
     }
     @keyframes moving {
         from{
             transform: translateX(100%);
         }
         to{
-            transform: translateX(o);
+            transform: translate(0);
         }
         
     }

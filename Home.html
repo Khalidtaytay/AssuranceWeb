@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f25e473145.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="Media/logo.png" alt="">
+        <div class="menu">
+            <ul class="menubar" style="list-style: none;">
+                <li id="offres">Discover our offers<i class="fa-solid fa-caret-down"></i></li>
+                <li id="devis">Get a quote<i class="fa-solid fa-caret-down"></i></li>
+                <li id="declarez-devis">Declare your claim<i class="fa-solid fa-caret-down"></i></li>
+                <li id="Conseils">Advice and Prevention<i class="fa-solid fa-caret-down"></i></li>
+                <li id="nous-conaitre">Know us<i class="fa-solid fa-caret-down"></i></li>
+            </ul>
+            <div id="offres-hover" style="display: none;">
+                <li class="hover-colum">
+                    <img src="Media/car.png" alt="">
+                    <div>
+                        <h3>Auto / Moto</h3>
+                        <h5>Discover WeAssure's Auto insurance offers</h5>
+                    </div>
+                </li>
+                <li class="hover-colum">
+                    <img src="Media/Home.png" alt="">
+                    <div>
+                        <h3>Home</h3>
+                        <h5>Benefit from comprehensive coverage for your home, belongings, and much more.</h5>
+                    </div>
+                </li>
+                <li class="hover-colum">
+                    <img src="Media/health.png" alt="">
+                    <div>
+                        <h3>Health / Life</h3>
+                        <h5>Secure your well-being and that of your family with WeAssure's health insurance offer.</h5>
+                    </div>
+                </li>
+                <li class="hover-colum">
+                    <img src="Media/epargne.png" alt="">
+                    <div>
+                        <h3>Savings</h3>
+                        <h5>Discover WeAssure's insurance and savings offers.</h5>
+                    </div>
+                </li>
+            </div>
+                <div id="devis-hover" style="display: none;">
+                    <div class="hover-colum">
+                        <img src="Media/ass auto.png" alt="">
+                        <div>
+                            <h3>Auto Insurance</h3>
+                            <h5>Request a quote and insure your vehicle at the best price.</h5>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/renv auto.png" alt="">
+                        <div>
+                            <h3>Auto Renewal</h3>
+                            <h5>Renew your contract in a few clicks and pay for your car insurance online.</h5>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/Home.png" alt="">
+                        <div>
+                            <h3>Home Insurance</h3>
+                            <h5>Make your simulation and choose the most suitable coverage.</h5>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/credit.png" alt="">
+                        <div>
+                            <h3>Credit Insurance</h3>
+                            <h5>Make your simulation and get up to 60% off your borrower's insurance.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="conseils-hover" style="display: none;">
+                <div class="hover-colum">
+                    <img src="Media/hands.png" alt="">
+                    <div>
+                        <h3>MRH Prevention</h3>
+                    </div>
+                </div>
+                <div class="hover-colum">
+                    <img src="Media/prep.png" alt="">
+                    <div>
+                        <h3>Auto Prevention</h3>
+                    </div>
+                </div>
+                </div>
+                <div id="nous-conaitre-hover" style="display: none;">
+                    <div class="hover-colum">
+                        <img src="Media/compagne.png" alt="">
+                        <div>
+                            <h3>The company</h3>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/resp.png" alt="">
+                        <div>
+                            <h3>Corporate Social Responsibility</h3>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/com.png" alt="">
+                        <div>
+                            <h3>Financial Communication</h3>
+                        </div>
+                    </div>
+                </div>
+            <div id="declarez-devis-hover" style="display: none;">
+                <div class="hover-colum">
+                    <img src="Media/sante.png" alt="">
+                    <div>
+                        <h3>Health Claim</h3>
+                        <h5>Everything you need to know about health claim declaration.</h5>
+                    </div>
+                </div>
+                <div class="hover-colum">
+                    <img src="Media/Home.png" alt="">
+                    <div>
+                        <h3>Home Claim</h3>
+                        <h5>Everything you need to know about home claim declaration.</h5>
+                    </div>
+                </div>
+                <div class="hover-colum">
+                    <img src="Media/auto.png" alt="">
+                    <div>
+                        <h3>Auto Claim</h3>
+                        <h5>Everything you need to know about auto claim declaration.</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="langage-switcher">
+                <i class="fa-solid fa-globe"></i>
+                English<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <ul class="langugeHover" style="list-style: none;">
+                <li id="langue"><a href="Home.html" style="color: #0076E3;">English</a></li>
+                <li id="langue"><a href="Fr.html">French</a></li>
+            </ul>
+            <div class="lines">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </div>
+        </div>
+        <div class="pic-header">
+            <div id="pic1"></div>
+            <div id="pic2" style="display: none;"></div>
+            <div id="pic3" style="display: none;"></div>
+        </div>
+    </header>
+    <section>
+        <div class="titre1">
+            <h4>DISCOVER OUR OFFERS</h4>
+            <h1>Solutions perfectly tailored to all your requirements and in line with your means.</h1>
+        </div>
+        <div class="produits">
+            <div class="prd">
+                <img src="Media/car.png" alt="">
+                <h3>Auto / Moto</h3>
+                <h5>Discover WeAssure's Auto insurance offers</h5>
+                <button>Learn more</button>
+            </div>
+            <div class="prd">
+                <img src="Media/Home.png" alt="">
+                <h3>Home</h3>
+                <h5>
+                    Benefit from comprehensive coverage for your home, belongings, and much more.
+                </h5>
+                <button>Learn more</button>
+            </div>
+            <div class="prd">
+                <img src="Media/health.png" alt="">
+                <h3>Health / Life</h3>
+                <h5>
+                    Secure your well-being and that of your family with WeAssure's health insurance offer.
+                </h5>
+                <button>Learn more</button>
+            </div>
+            <div class="prd">
+                <img src="Media/epargne.png" alt="">
+                <h3>Savings</h3>
+                <h5>Discover WeAssure's insurance and savings offers</h5>
+                <button>Learn more</button>
+            </div>
+        </div>
+        <div class="titre2">
+            <h4>DISCOVER ALL THE BENEFITS OF OUR SERVICES</h4>
+            <h1>A range of exclusive benefits and services await you in our universe!</h1>
+        </div>
+        <div class="section01">
+            <div class="grid-colum">
+                <div class="colum">An exclusive and free program designed to reward your loyalty.</div>
+                <div class="colum">An exclusive service for the declaration of your medical records.</div>
+                <div class="colum">A mobile application that simplifies your daily life.</div>
+                <div class="colum">The widest network of general agents is here to support you closely and personally.</div>
+            </div>            
+            <div class="section01-img"></div>
+        </div>
+        <div class="section02">
+            <h4>GET A QUOTE</h4>
+            <h1>Quickly get your online quote in a few clicks.</h1>
+                <div class="section02-prd">
+                    <div class="swiper-container swiper01">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/23/18/ba/2318ba8d8dd3bcc8f5e0bd17347032bd.jpg" alt="">
+                                <h3>Auto Insurance</h3>
+                                <h5>Request a quote and insure your vehicle at the best price.</h5>
+                                <button>Learn more</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/c7/02/42/c70242533d2726b0974a0b8650b6add9.jpg" alt="">
+                                <h3>Auto Renewal</h3>
+                                <h5>Renew your contract in a few clicks and pay for your car insurance online.</h5>
+                                <button>Learn more</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/6d/c8/65/6dc865cd93ce5bf931c984dfd06acec7.jpg" alt="">
+                                <h3>Home Insurance</h3>
+                                <h5>Make your simulation and choose the most suitable coverage.</h5>
+                                <button>Learn more</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/b4/0f/a2/b40fa264b668d16855d52da260ccad79.jpg" alt="">
+                                <h3>Credit Insurance</h3>
+                                <h5>Make your simulation and get up to 60% off your borrower's insurance.</h5>
+                                <button>Learn more</button>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-container swiper02">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/23/18/ba/2318ba8d8dd3bcc8f5e0bd17347032bd.jpg" alt="">
+                                <h3>Auto Insurance</h3>
+                                <h5>Request a quote and insure your vehicle at the best price.</h5>
+                                <button>Learn more</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/c7/02/42/c70242533d2726b0974a0b8650b6add9.jpg" alt="">
+                                <h3>Auto Renewal</h3>
+                                <h5>Renew your contract in a few clicks and pay for your car insurance online.</h5>
+                                <button>Learn more</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/6d/c8/65/6dc865cd93ce5bf931c984dfd06acec7.jpg" alt="">
+                                <h3>Home Insurance</h3>
+                                <h5>Make your simulation and choose the most suitable coverage.</h5>
+                                <button>Learn more</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://i.pinimg.com/564x/cf/35/91/cf3591c157824cef0e27ed092549afe0.jpg" alt="">
+                                <h3>Credit Insurance</h3>
+                                <h5>Make your simulation and get up to 60% off your borrower's insurance.</h5>
+                                <button>Learn more</button>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+        <div class="section03">
+            <h1>Declare <span>my claims</span></h1>
+            <p>In case of a claim, follow our detailed steps to guide you through the process. Additionally, our advisors are available to answer your questions and provide any necessary assistance.</p>
+            <div class="section03-btns">
+                <button>Health Claim</button>
+                <button>Home Claim</button>
+                <button>Auto Claim</button>
+            </div>
+        </div>
+    </section>
+    <ending>
+        <div class="ending-grid">
+            <div id="logo-ending">
+                <img src="Media/logo.png" alt="">
+            </div>
+            <div class="ending-menu">
+                <ul>
+                    <h4>Insurance offers</h4>
+                    <li>Auto / Moto</li>
+                    <li>Home</li>
+                    <li>Health / Life</li>
+                    <li>Savings</li>
+                    <li>Leisure</li>
+                </ul>
+                <ul>
+                    <h4>Claim declaration</h4>
+                    <li>Health Claim</li>
+                    <li>Home Claim</li>
+                    <li>Auto Claim</li>
+                </ul>
+                <ul>
+                    <h4>Know us</h4>
+                    <li>The company</li>
+                    <li>Financial Communications</li>
+                    <li>Financial Publications</li>
+                    <li>Activity Report</li>
+                    <li>Press Releases</li>
+                </ul>
+                <ul>
+                    <h4>Insurance offers</h4>
+                    <li>Auto / Moto</li>
+                    <li>Home</li>
+                    <li>Health / Life</li>
+                    <li>Savings</li>
+                    <li>Leisure</li>
+                </ul>
+                <ul>
+                    <h4>Advantage universe</h4>
+                    <li>Mobile Application</li>
+                    <li>Agencies</li>
+                </ul>
+            </div>
+        </div>
+    </ending>
+
+
+ <script src="js.js"></script>
+</body>
+</html>

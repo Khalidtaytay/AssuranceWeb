@@ -15,6 +15,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/f25e473145.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -23,110 +24,147 @@
             <ul class="menubar" style="list-style: none;">
                 <li id="offres">Decouvrez nos offres<i class="fa-solid fa-caret-down"></i></li>
                 <li id="devis">Obtenezun devis<i class="fa-solid fa-caret-down"></i></li>
-                <li id="declarez-devis">Déclarez vote devis<i class="fa-solid fa-caret-down"></i></li>
-                <li id="sinistre">Déclarez votre sinistre<i class="fa-solid fa-caret-down"></i></li>
-                <li id="conseils">Conseils et preventions<i class="fa-solid fa-caret-down"></i></li>
+                <li id="declarez-devis">Déclarez vote sinistre<i class="fa-solid fa-caret-down"></i></li>
+                <li id="Conseils">Conseils et preventions<i class="fa-solid fa-caret-down"></i></li>
                 <li id="nous-conaitre">Nous connaître<i class="fa-solid fa-caret-down"></i></li>
             </ul>
             <div id="offres-hover" style="display: none;">
                 <li class="hover-colum">
-                    <i class="fa-solid fa-car"></i>
+                    <img src="Media/car.png" alt="">
                     <div>
                         <h3>Auto/Moto</h3>
-                        <h5>Decouvrez les offres d'assurance de WeAssure</h5>
+                        <h5>Découvrez les offres d'assurance de WeAssure</h5>
                     </div>
                 </li>
                 <li class="hover-colum">
-                    <i class="fa-solid fa-house-chimney"></i>
+                    <img src="Media/Home.png" alt="">
                     <div>
                         <h3>Habitation</h3>
-                        <h5>beneficez d'une coverture complete pour votre logement,vos biens et bein plus encore</h5>
+                        <h5>bénéficez d'une coverture complete pour votre logement,vos biens et bein plus encore</h5>
                     </div>
                 </li>
                 <li class="hover-colum">
-                    <i class="fa-solid fa-staff-snake"></i>
+                    <img src="Media/health.png" alt="">
                     <div>
                         <h3>Santé / Prévoyance</h3>
-                        <h5>Protegez vous et votre fammile avec l'offre d'assurance sante de WeAssure</h5>
+                        <h5>Protégez vous et votre fammile avec l'offre d'assurance sante de WeAssure</h5>
                     </div>
                 </li>
                 <li class="hover-colum">
-                    <i class="fa-solid fa-money-bills"></i>
+                    <img src="Media/epargne.png" alt="">
                     <div>
                         <h3>Epargne</h3>
-                        <h5>Decouvrez les offres assurance et epargne de WeAssure</h5>
+                        <h5>Découvrez les offres assurance et epargne de WeAssure</h5>
                     </div>
                 </li>
             </div>
-            <div id="devis-hover" style="display: none;">
+                <div id="devis-hover" style="display: none;">
+                    <div class="hover-colum">
+                        <img src="Media/ass auto.png" alt="">
+                        <div>
+                            <h3>Assurance auto</h3>
+                            <h5>Demandez votre devis et assurez votre vehicule au meilleur prix</h5>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/renv auto.png" alt="">
+                        <div>
+                            <h3>Renouvellment Auto</h3>
+                            <h5>Renouvlez votre contrat en quelques clics et payez votre assurance assurance automobile en ligne</h5>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/Home.png" alt="">
+                        <div>
+                            <h3>Assurance Habitation</h3>
+                            <h5>Faites votre simulation et choisissez la couverture la plus adaptée</h5>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/credit.png" alt="">
+                        <div>
+                            <h3>Assurance crédit</h3>
+                            <h5>Faites votre simulation et bénéficiez jusqu'a 60%de réduction sur votre assurance emprunteur</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="conseils-hover" style="display: none;">
                 <div class="hover-colum">
-                    <i class="fa-solid fa-car"></i>
+                    <img src="Media/hands.png" alt="">
                     <div>
-                        <h3>Assurance auto</h3>
-                        <h5>Demandez votre devis et assurez votre vehicule au meilleur prix</h5>
+                        <h3>Prévention MRH</h3>
                     </div>
                 </div>
                 <div class="hover-colum">
-                    <i class="fa-solid fa-car"></i>
+                    <img src="Media/prep.png" alt="">
                     <div>
-                        <h3>Renouvellment Auto</h3>
-                        <h5>Renouvlez votre contrat en quelques clics et payez votre assurance assurance automobile en ligne</h5>
+                        <h3>Prévention Auto</h3>
                     </div>
                 </div>
-                <div class="hover-colum">
-                    <i class="fa-solid fa-house-chimney"></i>
-                    <div>
-                        <h3>Assurance Habitation</h3>
-                        <h5>Faites votre simulation et choisissez la couverture la plus adaptee</h5>
+                </div>
+                <div id="nous-conaitre-hover" style="display: none;">
+                    <div class="hover-colum">
+                        <img src="Media/compagne.png" alt="">
+                        <div>
+                            <h3>La compagnie</h3>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/resp.png" alt="">
+                        <div>
+                            <h3>Responsabilité sociétale des entreprises</h3>
+                        </div>
+                    </div>
+                    <div class="hover-colum">
+                        <img src="Media/com.png" alt="">
+                        <div>
+                            <h3>Communication financière</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="hover-colum">
-                    <i class="fa-solid fa-money-bills"></i>
-                    <div>
-                        <h3>Assurance credit</h3>
-                        <h5>Faites votre simulation et beneficiez jusqu'a 60%de reduction sur votre assurance emprunteur</h5>
-                    </div>
-                </div>
-            </div>
             <div id="declarez-devis-hover" style="display: none;">
                 <div class="hover-colum">
-                    <i class="fa-solid fa-staff-snake"></i>
+                    <img src="Media/sante.png" alt="">
                     <div>
                         <h3>Sinistre Sante</h3>
                         <h5>tout savoir sur la declaration de sinistre sante</h5>
                     </div>
                 </div>
                 <div class="hover-colum">
-                    <i class="fa-solid fa-staff-snake"></i>
+                    <img src="Media/Home.png" alt="">
                     <div>
                         <h3>Sinistre habitation</h3>
                         <h5>Tout savoir sur la declaration sinistre habitation</h5>
                     </div>
                 </div>
                 <div class="hover-colum">
-                    <i class="fa-solid fa-staff-snake"></i>
+                    <img src="Media/auto.png" alt="">
                     <div>
                         <h3>Sinistre Auto</h3>
                         <h5>tout savoir sur la declaration de sinistre Auto</h5>
                     </div>
                 </div>
             </div>
+
             <div class="langage-switcher">
                 <i class="fa-solid fa-globe"></i>
-                French
+                French<i class="fa-solid fa-caret-down"></i>
             </div>
             <ul class="langugeHover" style="list-style: none;">
-                <li id="langue">French</li>
-                <li id="langue"><a href="English.html">English</a></li>
+                <li id="langue"><a href="Fr.html" style="color: #0076E3;">French</a></li>
+                <li id="langue"><a href="Home.html">English</a></li>
             </ul>
             <div class="lines">
+
                 <div class="line" id="line1"></div>
                 <div class="line" id="line2"></div>
-                <div class="line"></div>
+                <div class="line" id="line3"></div>
             </div>
         </div>
         <div class="pic-header">
-            <img src="Media/Recursos_humanos_y_redes_de_personas___Foto_Premium-transformed.jpeg" alt="">
+            <div id="pic1"></div>
+            <div id="pic2" style="display: none;"></div>
+            <div id="pic3" style="display: none;"></div>
         </div>
     </header>
     <section>
@@ -136,13 +174,13 @@
         </div>
         <div class="produits">
             <div class="prd">
-                <i class="fa-solid fa-car"></i>
+                <img src="Media/car.png" alt="">
                 <h3>Auto / Moto</h3>
                 <h5>Découvrez les offres d'assurance Auto de WeAssure</h5>
                 <button>En savoir plus</button>
             </div>
             <div class="prd">
-                <i class="fa-solid fa-house-chimney"></i>
+                <img src="Media/Home.png" alt="">
                 <h3>Habitation</h3>
                 <h5>
                     Profitez d'une protection exhaustive pour votre domicile, vos possessions, et bien d'autres aspects.
@@ -150,7 +188,7 @@
                 <button>En savoir plus</button>
             </div>
             <div class="prd">
-                <i class="fa-solid fa-staff-snake"></i>
+                <img src="Media/health.png" alt="">
                 <h3>Santé / Prévoyance</h3>
                 <h5>
                     Sécurisez votre bien-être et celui de votre famille grâce à la proposition d'assurance santé de WeAssure.
@@ -158,7 +196,7 @@
                 <button>En savoir plus</button>
             </div>
             <div class="prd">
-                <i class="fa-solid fa-money-bills"></i>
+                <img src="Media/epargne.png" alt="">
                 <h3>Epargne</h3>
                 <h5>Découvrez les offres assurance et épargne de WeAssure</h5>
                 <button>En savoir plus</button>
@@ -202,7 +240,7 @@
                                 <button>En savoir plus</button>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://i.pinimg.com/564x/cf/35/91/cf3591c157824cef0e27ed092549afe0.jpg" alt="">
+                                <img src="https://i.pinimg.com/564x/b4/0f/a2/b40fa264b668d16855d52da260ccad79.jpg" alt="">
                                 <h3>Assurance credit</h3>
                                 <h5>Effectuez votre simulation et profitez d'une réduction pouvant atteindre jusqu'à 60% sur votre assurance emprunteur.</h5>
                                 <button>En savoir plus</button>
@@ -233,7 +271,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <img src="https://i.pinimg.com/564x/cf/35/91/cf3591c157824cef0e27ed092549afe0.jpg" alt="">
-                                <h3>Assurance credit</h3>
+                                <h3>Assurance crédit</h3>
                                 <h5>Effectuez votre simulation et profitez d'une réduction pouvant atteindre jusqu'à 60% sur votre assurance emprunteur.</h5>
                                 <button>En savoir plus</button>
                             </div>
@@ -299,8 +337,6 @@
     </ending>
 
 
-
- <link rel="stylesheet" href="style.css">
  <script src="js.js"></script>
 </body>
 </html>
