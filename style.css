@@ -6,7 +6,7 @@
     background: rgb(230, 230, 235);
     position: fixed;
     inset: 0;
-    z-index: 99999;
+    z-index: 9999999;
     display: flex;
     justify-content: center;
     align-items: center;
