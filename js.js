@@ -158,3 +158,9 @@ swtch.addEventListener('click',()=>{
 
     currentIndex = (currentIndex + 1) % pics.length; // Update currentIndex for the next iteration
 }, 4000);
+
+// for loading scrren
+let loading = document.querySelector('.loading');
+setTimeout(() => {
+  loading.style.display = 'none';
+}, 3000);
